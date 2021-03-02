@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Karla, 'Times New Roman', Times, serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    background-color: hsl(204, 43%, 93%);
+}
+
+.container {
+    width: 100%;
+    max-width: 85%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: aqua;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: -5px 5px 5px hsla(0, 0%, 78%, 0.226);
+}
+
+.header-wrapper {
+    background-color: white;
+    padding: 1em 1.5em 1.5em;
+}
+
+.main-wrapper {
+    background-color: hsl(179, 62%, 43%);
+    padding: 1em 1.5em 1.5em;
+    color: white;
+}
+
+.footer-wrapper {
+    background-color: hsla(179, 62%, 43%, 0.61);
+    padding: 1em 1.5em 1.5em;
+}
+
+.main-pricing-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.header-title {
+    font-size: 1.3em;
+    font-weight: 700;
+    color: white;
+}
+
+.main-title,
+.footer-title {
+    font-size: 1.1em;
+    font-weight: 700;
+    color: white;
+}
+
+.header-title {
+    color: hsl(179, 62%, 43%);
+}
+
+.header-headline {
+    color: hsl(71, 73%, 54%);
+    font-weight: 700;
+}
+
+.header-details {
+    line-height: 1.5em;
+    color: hsl(218, 22%, 67%);
+    font-size: 0.9em;
+}
+
+.price {
+    font-size: 2em;
+    font-weight: 700;
+}
+
+.per-month {
+    padding-left: 0.8em;
+    color: hsl(204, 43%, 93%);
+    font-size: 0.9em;
+}
+
+.main-headline {
+    font-size: 0.9em;
+}
+
+.link-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-size: 0.9em;
+    font-weight: 300;
+}
+
+.link-items {
+    padding-bottom: 0.3em;
+}
+
+.main-signup {
+    width: 100%;
+    border-style: none;
+    border-radius: 5px;
+    background-color: hsl(71, 73%, 54%);
+    color: white;
+    font-weight: 700;
+    padding: 1.2em 0;
+    font-size: 0.9em;
+    letter-spacing: 0.1em;
+    margin: 1em 0 0.5em;
+    box-shadow: 5px 5px 5px hsla(0, 0%, 48%, 0.308);
+}
+
+@media (min-width: 376px) {
+    .container {
+        flex-direction: row;
+        flex-wrap: wrap;
+        max-width: 600px;
+    }
+    .header-wrapper {
+        flex: 100%;
+    }
+    .main-wrapper,
+    .footer-wrapper {
+        flex: 50%;
+        padding: 1em 2.5em 2em;
+    }
+}
